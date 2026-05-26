@@ -118,17 +118,17 @@
         if (!elements.audio || state.isPlaying) return;
         
         try {
-            // Set initial volume to 0 for fade in
-            elements.audio.volume = 0;
+            // Set volume directly for mobile compatibility
+            elements.audio.volume = CONFIG.defaultVolume;
+            
+            // Load the audio first
+            elements.audio.load();
             
             // Attempt to play
             const playPromise = elements.audio.play();
             
             if (playPromise !== undefined) {
                 await playPromise;
-                
-                // Fade in
-                await fadeVolume(CONFIG.defaultVolume, CONFIG.fadeInDuration);
                 
                 state.isPlaying = true;
                 state.volume = CONFIG.defaultVolume;
