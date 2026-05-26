@@ -22,7 +22,7 @@
     const CONFIG = {
         fadeInDuration: 2000,
         fadeOutDuration: 1000,
-        defaultVolume: 100,
+        defaultVolume: 0.7,
         storageKey: 'wedding-music-state'
     };
     
