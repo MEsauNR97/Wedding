@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <!-- Meta Tags Esenciales -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Esau & Gala | Boda 20 de Marzo 2027 | Invitación Digital</title>
+    <meta name="description" content="Invitación digital a la boda de Esau y Gala. Celebra con nosotros el 20 de marzo de 2027. Ceremonia religiosa y recepción. Confirma tu asistencia.">
+    <meta name="keywords" content="boda, Esau, Gala, invitación, 20 marzo 2027, ceremonia, recepción">
+    <meta name="author" content="Esau & Gala">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.esauygala.com">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.esauygala.com">
+    <meta property="og:title" content="Esau & Gala - Nuestra Boda">
+    <meta property="og:description" content="Nos casamos el 20 de marzo de 2027. ¡Acompáñanos en este día especial!">
+    <meta property="og:image" content="https://www.esauygala.com/IMG/portada.JPG">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_MX">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Esau & Gala - Nuestra Boda">
+    <meta name="twitter:description" content="Nos casamos el 20 de marzo de 2027. ¡Acompáñanos en este día especial!">
+    <meta name="twitter:image" content="https://www.esauygala.com/IMG/portada.JPG">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#c65a2e">
+    <meta name="msapplication-TileColor" content="#c65a2e">
+    
+    <!-- Preconnect para optimización -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload recursos críticos -->
+    <link rel="preload" href="CSS/Styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600;700&display=swap" as="style">
+    
+    <!-- Google Fonts con display=swap para optimización -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="CSS/Styles.css">
+    
+    <!-- Structured Data (JSON-LD) para SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Boda de Esau y Gala",
+        "description": "Ceremonia de boda y recepción",
+        "startDate": "2027-03-20T18:00:00-06:00",
+        "endDate": "2027-03-21T02:00:00-06:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+            "@type": "Place",
+            "name": "El señor de la Misericordia",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ciudad",
+                "addressCountry": "MX"
+            }
+        },
+        "organizer": {
+            "@type": "Person",
+            "name": "Esau & Gala"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip to main content para accesibilidad -->
+    <a href="#main-content" class="skip-link" aria-label="Saltar al contenido principal">
+        Saltar al contenido
+    </a>
+
+    <!-- Loading Screen con ARIA -->
+    <div id="loading-screen" class="loading" role="status" aria-live="polite" aria-label="Cargando página">
+        <div class="loading__content">
+            <div class="loading__heart" aria-hidden="true">❤️</div>
+            <p class="loading__text">Cargando...</p>
+        </div>
+    </div>
+
+    <!-- Reproductor de Música Accesible -->
+    <aside class="music-player" aria-label="Reproductor de música de fondo">
+        <button 
+            id="music-toggle" 
+            class="music-player__btn" 
+            type="button"
+            aria-label="Reproducir música de fondo"
+            aria-pressed="false">
+            <span class="music-player__icon" aria-hidden="true">🎵</span>
+            <span class="sr-only">Música</span>
+        </button>
+        <audio 
+            id="background-music" 
+            loop 
+            preload="none"
+            aria-label="Música de fondo de la boda">
+            <source src="music/cancion-boda.mp3" type="audio/mpeg">
+            <p>Tu navegador no soporta el elemento de audio.</p>
+        </audio>
+    </aside>
+
+    <!-- Botón Volver Arriba -->
+    <button 
+        id="scroll-top" 
+        class="scroll-top" 
+        type="button"
+        aria-label="Volver al inicio de la página"
+        aria-hidden="true">
+        <span aria-hidden="true">↑</span>
+    </button>
+
+    <!-- Barra de Progreso de Scroll -->
+    <div class="progress-bar" role="progressbar" aria-label="Progreso de lectura" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+    <!-- HERO SECTION -->
+    <header class="hero" role="banner">
+        <div class="hero__overlay" aria-hidden="true"></div>
+        <div class="hero__content">
+            <div class="hero__decorative-line" aria-hidden="true"></div>
+            <h1 class="hero__title">
+                <span class="hero__name">Esau</span>
+                <span class="hero__ampersand" aria-hidden="true">&</span>
+                <span class="hero__name">Gala</span>
+            </h1>
+            <p class="hero__subtitle">¡Nos casamos!</p>
+            <blockquote class="hero__verse">
+                <p class="hero__verse-text">"Así que no son ya más dos, sino una sola carne; por tanto, lo que Dios juntó, no lo separe el hombre"</p>
+                <cite class="hero__verse-cite">Mateo 19:6</cite>
+            </blockquote>
+            
+            <!-- Contador con decoraciones -->
+            <div class="countdown-wrapper">
+                <span class="countdown__flower countdown__flower--top-left" aria-hidden="true">🌸</span>
+                <span class="countdown__flower countdown__flower--top-right" aria-hidden="true">🌺</span>
+                <span class="countdown__flower countdown__flower--bottom-left" aria-hidden="true">🌼</span>
+                <span class="countdown__flower countdown__flower--bottom-right" aria-hidden="true">🌻</span>
+                <span class="countdown__flower countdown__flower--left" aria-hidden="true">🌷</span>
+                <span class="countdown__flower countdown__flower--right" aria-hidden="true">🌹</span>
+                <div 
+                    id="countdown" 
+                    class="countdown" 
+                    role="timer" 
+                    aria-live="polite"
+                    aria-label="Cuenta regresiva para la boda">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Indicador de Scroll -->
+        <button 
+            class="scroll-indicator" 
+            type="button"
+            aria-label="Desplazarse hacia abajo">
+            <span aria-hidden="true">↓</span>
+        </button>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content" role="main">
+        
+        <!-- HISTORIA -->
+        <section class="section section--story" id="historia" aria-labelledby="historia-heading">
+            <!-- Decoraciones del marco -->
+            <img class="frame-decoration frame-tulip frame-tulip--top-left"
+                 src="IMG/decorations/tulipan.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-tulip frame-tulip--top-right"
+                 src="IMG/decorations/tulipan.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-garland frame-garland--top"
+                 src="IMG/decorations/Guirnalda-horizontal.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-garland frame-garland--left"
+                 src="IMG/decorations/Guirnalda-vertical.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-garland frame-garland--right"
+                 src="IMG/decorations/Guirnalda-vertical.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-garland frame-garland--bottom"
+                 src="IMG/decorations/Guirnalda-horizontal.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-tulip frame-tulip--bottom-left"
+                 src="IMG/decorations/tulipan.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-tulip frame-tulip--bottom-right"
+                 src="IMG/decorations/tulipan.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            
+            <div class="section__container">
+                <h2 id="historia-heading" class="section__title">Nuestra Historia</h2>
+                <div class="section__divider" aria-hidden="true"></div>
+                <p class="section__text section__text--story">
+                    Dios cruzó nuestros caminos para escribir una historia llena de amor,
+                    paciencia y aventuras. Hoy queremos compartir este momento especial contigo
+                    y celebrar el inicio de nuestra vida juntos.
+                </p>
+            </div>
+        </section>
+
+        <!-- GALERÍA -->
+        <section class="section section--gallery" id="galeria" aria-labelledby="galeria-heading">
+            <!-- Decoraciones del marco -->
+            <img class="frame-decoration frame-tulip frame-tulip--top-left"
+                 src="IMG/decorations/tulipan.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-tulip frame-tulip--top-right"
+                 src="IMG/decorations/tulipan.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-garland frame-garland--top"
+                 src="IMG/decorations/Guirnalda-horizontal.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-garland frame-garland--left"
+                 src="IMG/decorations/Guirnalda-vertical.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-garland frame-garland--right"
+                 src="IMG/decorations/Guirnalda-vertical.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-garland frame-garland--bottom"
+                 src="IMG/decorations/Guirnalda-horizontal.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-tulip frame-tulip--bottom-left"
+                 src="IMG/decorations/tulipan.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-tulip frame-tulip--bottom-right"
+                 src="IMG/decorations/tulipan.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            
+            <div class="section__container">
+                <h2 id="galeria-heading" class="section__title">Momentos Especiales</h2>
+                <div class="section__divider" aria-hidden="true"></div>
+                <p class="section__subtitle">Nuestros recuerdos más preciados</p>
+                
+                <!-- Carrusel de Fotos Accesible -->
+                <div class="carousel" role="region" aria-label="Galería de fotos" aria-roledescription="carrusel">
+                    <button 
+                        class="carousel__btn carousel__btn--prev" 
+                        type="button"
+                        aria-label="Ver foto anterior">
+                        <span aria-hidden="true">‹</span>
+                    </button>
+                    
+                    <div class="carousel__viewport">
+                        <div class="carousel__track" role="list">
+                            <div class="carousel__slide" role="listitem" aria-label="Foto 1 de 9">
+                                <img
+                                    src="Carrusel/Foto 1.png"
+                                    alt="Momento especial de Esau y Gala - Foto 1"
+                                    class="carousel__image"
+                                    loading="eager"
+                                    width="800"
+                                    height="600">
+                            </div>
+                            <div class="carousel__slide" role="listitem" aria-label="Foto 2 de 9">
+                                <img
+                                    src="Carrusel/Foto 2.png"
+                                    alt="Momento especial de Esau y Gala - Foto 2"
+                                    class="carousel__image"
+                                    loading="lazy"
+                                    width="800"
+                                    height="600">
+                            </div>
+                            <div class="carousel__slide" role="listitem" aria-label="Foto 3 de 9">
+                                <img
+                                    src="Carrusel/Foto 3.png"
+                                    alt="Momento especial de Esau y Gala - Foto 3"
+                                    class="carousel__image"
+                                    loading="lazy"
+                                    width="800"
+                                    height="600">
+                            </div>
+                            <div class="carousel__slide" role="listitem" aria-label="Foto 4 de 9">
+                                <img
+                                    src="Carrusel/Foto 4.png"
+                                    alt="Momento especial de Esau y Gala - Foto 4"
+                                    class="carousel__image"
+                                    loading="lazy"
+                                    width="800"
+                                    height="600">
+                            </div>
+                            <div class="carousel__slide" role="listitem" aria-label="Foto 5 de 9">
+                                <img
+                                    src="Carrusel/Foto 5.png"
+                                    alt="Momento especial de Esau y Gala - Foto 5"
+                                    class="carousel__image"
+                                    loading="lazy"
+                                    width="800"
+                                    height="600">
+                            </div>
+                            <div class="carousel__slide" role="listitem" aria-label="Foto 6 de 9">
+                                <img
+                                    src="Carrusel/Foto 6.png"
+                                    alt="Momento especial de Esau y Gala - Foto 6"
+                                    class="carousel__image"
+                                    loading="lazy"
+                                    width="800"
+                                    height="600">
+                            </div>
+                            <div class="carousel__slide" role="listitem" aria-label="Foto 7 de 9">
+                                <img
+                                    src="Carrusel/Foto 7.png"
+                                    alt="Momento especial de Esau y Gala - Foto 7"
+                                    class="carousel__image"
+                                    loading="lazy"
+                                    width="800"
+                                    height="600">
+                            </div>
+                            <div class="carousel__slide" role="listitem" aria-label="Foto 8 de 9">
+                                <img
+                                    src="Carrusel/Foto 8.png"
+                                    alt="Momento especial de Esau y Gala - Foto 8"
+                                    class="carousel__image"
+                                    loading="lazy"
+                                    width="800"
+                                    height="600">
+                            </div>
+                            <div class="carousel__slide" role="listitem" aria-label="Foto 9 de 9">
+                                <img
+                                    src="Carrusel/Foto 9.png"
+                                    alt="Momento especial de Esau y Gala - Foto 9"
+                                    class="carousel__image"
+                                    loading="lazy"
+                                    width="800"
+                                    height="600">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button 
+                        class="carousel__btn carousel__btn--next" 
+                        type="button"
+                        aria-label="Ver siguiente foto">
+                        <span aria-hidden="true">›</span>
+                    </button>
+                </div>
+                
+                <!-- Indicadores del Carrusel -->
+                <div class="carousel__indicators" role="tablist" aria-label="Navegación de fotos">
+                    <button
+                        class="carousel__indicator carousel__indicator--active"
+                        type="button"
+                        role="tab"
+                        aria-label="Ir a foto 1"
+                        aria-selected="true"
+                        data-slide="0">
+                    </button>
+                    <button
+                        class="carousel__indicator"
+                        type="button"
+                        role="tab"
+                        aria-label="Ir a foto 2"
+                        aria-selected="false"
+                        data-slide="1">
+                    </button>
+                    <button
+                        class="carousel__indicator"
+                        type="button"
+                        role="tab"
+                        aria-label="Ir a foto 3"
+                        aria-selected="false"
+                        data-slide="2">
+                    </button>
+                    <button
+                        class="carousel__indicator"
+                        type="button"
+                        role="tab"
+                        aria-label="Ir a foto 4"
+                        aria-selected="false"
+                        data-slide="3">
+                    </button>
+                    <button
+                        class="carousel__indicator"
+                        type="button"
+                        role="tab"
+                        aria-label="Ir a foto 5"
+                        aria-selected="false"
+                        data-slide="4">
+                    </button>
+                    <button
+                        class="carousel__indicator"
+                        type="button"
+                        role="tab"
+                        aria-label="Ir a foto 6"
+                        aria-selected="false"
+                        data-slide="5">
+                    </button>
+                    <button
+                        class="carousel__indicator"
+                        type="button"
+                        role="tab"
+                        aria-label="Ir a foto 7"
+                        aria-selected="false"
+                        data-slide="6">
+                    </button>
+                    <button
+                        class="carousel__indicator"
+                        type="button"
+                        role="tab"
+                        aria-label="Ir a foto 8"
+                        aria-selected="false"
+                        data-slide="7">
+                    </button>
+                    <button
+                        class="carousel__indicator"
+                        type="button"
+                        role="tab"
+                        aria-label="Ir a foto 9"
+                        aria-selected="false"
+                        data-slide="8">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- EVENTO -->
+        <section class="section section--event" id="evento" aria-labelledby="evento-heading">
+            <span class="decorative-icon decorative-icon--1" aria-hidden="true">⛪</span>
+            <span class="decorative-icon decorative-icon--2" aria-hidden="true">🎉</span>
+            <span class="decorative-icon decorative-icon--3" aria-hidden="true">🕊️</span>
+            <span class="decorative-icon decorative-icon--4" aria-hidden="true">🎊</span>
+            <div class="section__container">
+                <h2 id="evento-heading" class="section__title">El Evento</h2>
+                <div class="section__divider" aria-hidden="true"></div>
+                
+                <!-- Fecha Principal -->
+                <div class="event-date">
+                    <img 
+                        src="IMG/Reloj.gif" 
+                        alt="" 
+                        class="event-date__icon"
+                        loading="lazy"
+                        width="80"
+                        height="80"
+                        aria-hidden="true">
+                    <h3 class="event-date__text">
+                        <time datetime="2027-03-20">20 de Marzo de 2027</time>
+                    </h3>
+                </div>
+                
+                <!-- Lugares del Evento -->
+                <div class="event-venues">
+                    <!-- Ceremonia Religiosa -->
+                    <article class="event-venue" aria-labelledby="ceremonia-heading">
+                        <img 
+                            src="IMG/Templo.gif" 
+                            alt="" 
+                            class="event-venue__icon"
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            aria-hidden="true">
+                        <h4 id="ceremonia-heading" class="event-venue__title">Ceremonia Religiosa</h4>
+                        <p class="event-venue__time">
+                            <time datetime="18:00">6:00 PM</time>
+                        </p>
+                        <p class="event-venue__name">El señor de la Misericordia</p>
+                        <a 
+                            href="https://maps.app.goo.gl/RteQQ8gCb3QVdm4q8" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="event-venue__link"
+                            aria-label="Ver ubicación de la ceremonia religiosa en Google Maps">
+                            <span class="event-venue__link-icon" aria-hidden="true">📍</span>
+                            Ver ubicación
+                        </a>
+                    </article>
+                    
+                    <!-- Recepción -->
+                    <article class="event-venue" aria-labelledby="recepcion-heading">
+                        <img 
+                            src="IMG/Fiesta.gif" 
+                            alt="" 
+                            class="event-venue__icon"
+                            loading="lazy"
+                            width="100"
+                            height="100"
+                            aria-hidden="true">
+                        <h4 id="recepcion-heading" class="event-venue__title">Recepción</h4>
+                        <p class="event-venue__time">
+                            <time datetime="20:00">8:00 PM</time>
+                        </p>
+                        <p class="event-venue__name">La casona de sus Mercedes</p>
+                        <a 
+                            href="https://maps.app.goo.gl/SujaqhstxBTUVDp77" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="event-venue__link"
+                            aria-label="Ver ubicación de la recepción en Google Maps">
+                            <span class="event-venue__link-icon" aria-hidden="true">📍</span>
+                            Ver ubicación
+                        </a>
+                    </article>
+                </div>
+                
+                <!-- Mensaje -->
+                <p class="event-message">
+                    Los esperamos para celebrar este día tan especial junto a nosotros
+                </p>
+            </div>
+        </section>
+
+        <!-- CÓDIGO DE VESTIMENTA -->
+        <section class="section section--dress-code" id="vestimenta" aria-labelledby="vestimenta-heading">
+            <!-- Decoraciones del marco -->
+            <img class="frame-decoration frame-tulip frame-tulip--top-left"
+                 src="IMG/decorations/tulipan.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-tulip frame-tulip--top-right"
+                 src="IMG/decorations/tulipan.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-garland frame-garland--top"
+                 src="IMG/decorations/Guirnalda-horizontal.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-garland frame-garland--left"
+                 src="IMG/decorations/Guirnalda-vertical.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-garland frame-garland--right"
+                 src="IMG/decorations/Guirnalda-vertical.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-garland frame-garland--bottom"
+                 src="IMG/decorations/Guirnalda-horizontal.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-tulip frame-tulip--bottom-left"
+                 src="IMG/decorations/tulipan.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            <img class="frame-decoration frame-tulip frame-tulip--bottom-right"
+                 src="IMG/decorations/tulipan.png"
+                 alt=""
+                 aria-hidden="true"
+                 loading="lazy">
+            
+            <div class="section__container">
+                <h2 id="vestimenta-heading" class="section__title">Código de Vestimenta</h2>
+                <div class="section__divider" aria-hidden="true"></div>
+                
+                <p class="section__text section__text--story">
+                    <strong>Formal</strong>
+                </p>
+                
+                <p class="section__text section__text--story">
+                    Esperamos que nos acompañes con tu mejor atuendo formal para hacer de esta celebración un momento aún más especial.
+                </p>
+                
+                <p class="section__text section__text--story" style="font-style: italic; margin-top: var(--spacing-lg);">
+                    Se les agradece guardar el color blanco para la novia
+                </p>
+            </div>
+        </section>
+
+        <!-- MESA DE REGALOS -->
+        <section class="section section--gifts" id="regalos" aria-labelledby="regalos-heading">
+            <span class="decorative-icon decorative-icon--1" aria-hidden="true">🎁</span>
+            <span class="decorative-icon decorative-icon--2" aria-hidden="true">💝</span>
+            <div class="section__container">
+                <h2 id="regalos-heading" class="section__title">Mesa de Regalos</h2>
+                <div class="section__divider" aria-hidden="true"></div>
+                <p class="section__text">
+                    Tu presencia es nuestro mejor regalo, pero si deseas obsequiarnos algo,
+                    hemos preparado las siguientes opciones:
+                </p>
+                
+                <div class="gifts">
+                    <article class="gift-card">
+                        <span class="gift-card__icon" aria-hidden="true">🎁</span>
+                        <h3 class="gift-card__title">Liverpool</h3>
+                        <p class="gift-card__text">
+                            Número de evento: <strong>52000606</strong>
+                        </p>
+                        <a
+                            href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/52000606"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="gift-card__link"
+                            aria-label="Ir a la mesa de regalos de Liverpool">
+                            Ver mesa de regalos
+                        </a>
+                    </article>
+                    
+                    <article class="gift-card">
+                        <span class="gift-card__icon" aria-hidden="true">✉️</span>
+                        <h3 class="gift-card__title">Sobre</h3>
+                        <p class="gift-card__text">
+                            También puedes entregar tu regalo el día del evento
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__content">
+            <p class="footer__names">
+                <span class="footer__name">Esau</span>
+                <span class="footer__ampersand" aria-hidden="true">&</span>
+                <span class="footer__name">Gala</span>
+            </p>
+            <p class="footer__date">
+                <time datetime="2027-03-20">20 de Marzo de 2027</time>
+            </p>
+            <blockquote class="footer__quote">
+                <p>"Por encima de todo, vístanse de amor, que es el vínculo perfecto"</p>
+                <cite>Colosenses 3:14</cite>
+            </blockquote>
+        </div>
+    </footer>
+
+    <!-- JavaScript con carga diferida y async -->
+    <script src="JS/contador.js" defer></script>
+    <script src="JS/carrusel.js" defer></script>
+    <script src="JS/animaciones.js" defer></script>
+    <script src="JS/musica.js" defer></script>
+
+    <!-- Noscript fallback -->
+    <noscript>
+        <div style="padding: 20px; background: #fff3cd; border: 2px solid #ffc107; margin: 20px; text-align: center;">
+            <p><strong>JavaScript está deshabilitado.</strong></p>
+            <p>Para una mejor experiencia, por favor habilita JavaScript en tu navegador.</p>
+        </div>
+    </noscript>
+
+</body>
+</html>
